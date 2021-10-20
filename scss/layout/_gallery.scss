@@ -1,0 +1,50 @@
+.gallery-section {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.galery-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.gallery-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
+.galery-item-thumb{
+  position: relative;
+  display: flex;
+}
+
+.galery-thumb-box{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.galery-thumb-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  height: 70px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 82px 27px 83px;
+  color: #FFFFFF;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.gallery-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  margin-bottom: 50px;
+}

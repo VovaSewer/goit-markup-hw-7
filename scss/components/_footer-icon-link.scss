@@ -1,0 +1,21 @@
+.footer-icon-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.footer-icon-link:hover .footer-icon-svg,
+.footer-icon-link:focus .footer-icon-svg{
+  fill:var(--background-color); 
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus{
+  background-color: var(--accent-color);
+}

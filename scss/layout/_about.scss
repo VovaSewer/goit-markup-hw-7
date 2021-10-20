@@ -1,0 +1,36 @@
+.about {
+  padding-top: 94px;
+}
+
+.about-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.about-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.about-icon-bcg{
+  width: 270px;
+  height: 120px;
+  display: flex;
+  background: #F5F4FA;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  margin-bottom: 10px;
+}
+
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
