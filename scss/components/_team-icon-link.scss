@@ -7,14 +7,13 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color); 
+    & .team-icon-svg,
+    & .team-icon-svg{
+      fill:var(--background-color); 
+    }
+  }
 }
 
-.team-icon-link:hover .team-icon-svg,
-.team-icon-link:focus .team-icon-svg{
-  fill:var(--background-color); 
-}
-
-.team-icon-link:hover,
-.team-icon-link:focus {
-  background-color: var(--accent-color);
-}

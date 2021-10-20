@@ -54,11 +54,6 @@
   margin-right: 40px;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
 .container-header {
   display: flex;
 }
@@ -315,18 +310,18 @@
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.clients-icon {
-  fill: #AFB1B8;
+.clients-link:hover, .clients-link:focus {
+  border-color: var(--accent-color);
 }
 
 .clients-link:hover .clients-icon,
+.clients-link:hover .clients-icon, .clients-link:focus .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
+.clients-icon {
+  fill: #AFB1B8;
 }
 
 .footer {
@@ -481,6 +476,10 @@ body {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link:hover, .link:focus {
+  color: var(--accent-color);
+}
+
 .list {
   list-style-type: none;
   margin: 0;
@@ -544,14 +543,14 @@ body {
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.team-icon-link:hover .team-icon-svg,
-.team-icon-link:focus .team-icon-svg {
-  fill: var(--background-color);
+.team-icon-link:hover, .team-icon-link:focus {
+  background-color: var(--accent-color);
 }
 
-.team-icon-link:hover,
-.team-icon-link:focus {
-  background-color: var(--accent-color);
+.team-icon-link:hover .team-icon-svg,
+.team-icon-link:hover .team-icon-svg, .team-icon-link:focus .team-icon-svg,
+.team-icon-link:focus .team-icon-svg {
+  fill: var(--background-color);
 }
 
 .footer-icon-link {
@@ -566,14 +565,13 @@ body {
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.footer-icon-link:hover .footer-icon-svg,
-.footer-icon-link:focus .footer-icon-svg {
-  fill: var(--background-color);
+.footer-icon-link:hover, .footer-icon-link:focus {
+  background-color: var(--accent-color);
 }
 
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-  background-color: var(--accent-color);
+.footer-icon-link .footer-icon-svg,
+.footer-icon-link .footer-icon-svg {
+  fill: var(--background-color);
 }
 
 .backdrop {
@@ -625,15 +623,15 @@ body {
   cursor: pointer;
 }
 
+.btn-close:hover .modal-close-icon,
+.btn-close:focus .modal-close-icon {
+  fill: var(--accent-color);
+}
+
 .modal-close-icon {
   fill: #000000;
   transition-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-close:hover .modal-close-icon,
-.btn-close:focus .modal-close-icon {
-  fill: var(--accent-color);
 }
 
 .modal-title {
@@ -678,8 +676,7 @@ body {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus,
-.modal-text-input:focus {
+.modal-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -705,6 +702,10 @@ body {
   outline: none;
   transition-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text-input:focus {
+  border-color: var(--accent-color);
 }
 
 textarea::placeholder {
@@ -788,17 +789,7 @@ textarea::placeholder {
   padding: 6px 22px;
 }
 
-.btn-portfolio:hover,
-.btn-portfolio:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  cursor: pointer;
-  border: none;
-  background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.btn-portfolio-text {
+.btn-portfolio {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -809,6 +800,15 @@ textarea::placeholder {
   border-radius: 4px;
   border: none;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.btn-portfolio:hover, .btn-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  cursor: pointer;
+  border: none;
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-list {
@@ -847,12 +847,11 @@ textarea::placeholder {
   max-width: 370px;
 }
 
-.work-item:hover,
-.work-item:focus {
+.work-item:hover, .work-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work-item:hover .work-text {
+.work-item:hover .work-text, .work-item:focus .work-text {
   transform: translateY(0);
 }
 

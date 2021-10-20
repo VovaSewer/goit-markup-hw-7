@@ -8,14 +8,12 @@
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-.footer-icon-link:hover .footer-icon-svg,
-.footer-icon-link:focus .footer-icon-svg{
-  fill:var(--background-color); 
-}
-
-.footer-icon-link:hover,
-.footer-icon-link:focus{
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color);
+  }
+  & .footer-icon-svg,
+  & .footer-icon-svg{
+    fill:var(--background-color); 
+  }
 }

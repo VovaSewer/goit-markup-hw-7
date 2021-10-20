@@ -31,18 +31,16 @@ margin-bottom: 50px;
   margin-left: 30px;
   cursor: pointer;
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus{ 
+    border-color: var(--accent-color);
+    & .clients-icon,
+    & .clients-icon {
+      fill:var(--accent-color);
+    }
+  }
 }  
 
 .clients-icon{
 fill: #AFB1B8;
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill:var(--accent-color);
-} 
-
-.clients-link:hover,
-.clients-link:focus{
-  border-color: var(--accent-color);
 }
