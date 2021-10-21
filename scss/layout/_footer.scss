@@ -58,16 +58,15 @@
 }
 
 .footer-icon-list {
-  display: flex;
-  align-items: center;
+  @extend %align-center;
   margin-top: 16px;
 }
 
-.footer-icon-item:not(:first-child) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
+.footer-icon-item {
+  &:not(:first-child){
+    @extend %align-items;
+    margin-left: 10px;
+  }
 }
 
 .footer-icon-svg{
