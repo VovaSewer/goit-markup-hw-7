@@ -26,11 +26,8 @@
 }
 
 .galery-thumb-title{
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 16px, 0.03em);
   height: 70px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
   padding: 27px 82px 27px 83px;
@@ -40,11 +37,7 @@
 
 .gallery-title,
 .team-title {
-  
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font(36px, 700, 42px, 0.03em);
   text-align: center;
   color: var(--primary-title-color);
   margin-bottom: 50px;

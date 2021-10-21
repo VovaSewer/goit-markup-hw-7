@@ -4,11 +4,7 @@
 }
 
 .clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
+  @include font(36px, 700, 42px, 0.03em);
   color: var(--primary-title-color);
   margin-bottom: 50px;
 }
@@ -20,14 +16,11 @@
 }
 
 .clients-link{
-  width: 170px;
-  height: 92px;
+  @include button (170px, 92px, 4px);
   @extend %align-items;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
-  border-radius: 4px;
   margin-left: 30px;
-  cursor: pointer;
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus{ 
