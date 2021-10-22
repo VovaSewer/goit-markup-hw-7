@@ -4,23 +4,29 @@
   padding-bottom: 25px;
 }
 
-.logo-header {
+.header-logo {
   font-family: Raleway;
   @include font(26px, 700, 31px, 0.03em);
   color: #000000;
   text-decoration: none;
 }
 
-.logo-header {
+.header-logo {
   margin-right: 93px;
 }
 
-.logo-first {
+.header-logo__first {
   color: var(--accent-color);
 }
 
 .header-list {
   display: flex;
+}
+
+.header-item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }  
 }
 
 .header-link {
@@ -42,17 +48,11 @@
   bottom: 0; 
 }
 
-.header-item {
-  &:not(:last-child) {
-    margin-right: 40px;
-  }  
-}
-
-.container-header {  
+.header__container {  
   display: flex;
 }
 
-.container-nav {
+.header-nav {
   @extend %align-center;
 }
 

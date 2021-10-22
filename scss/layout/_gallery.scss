@@ -35,8 +35,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.gallery-title,
-.team-title {
+.gallery-title {
   @include font(36px, 700, 42px, 0.03em);
   text-align: center;
   color: var(--primary-title-color);
